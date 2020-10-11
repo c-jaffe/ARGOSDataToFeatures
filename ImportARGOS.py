@@ -10,3 +10,5 @@
 ## Author: catherine.jaffe@duke.edu (for ENV859)
 ##---------------------------------------------------------------------
 
+ # library
+import sys, os, arcpy

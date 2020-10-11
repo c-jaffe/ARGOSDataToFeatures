@@ -19,3 +19,6 @@ arcpy.Select_analysis(in_features, out_feature_class, where_clause)
 buffRoads = "C:/Advanced_GIS/GISandPython/ArcPyDemo1/Scratch/BufferedRoads.shp"
 buffDist = "500 meters"
 arcpy.Buffer_analysis(out_feature_class,buffRoads,buffDist,'','','ALL')
+
+
+

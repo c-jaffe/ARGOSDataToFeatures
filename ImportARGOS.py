@@ -12,3 +12,13 @@
 
  # library
 import sys, os, arcpy
+
+# import data
+inputFile = 'C:/Advanced_GIS/GISandPython/ARGOSTracking/Data/ARGOSData/1997dg.txt'
+outputFC = "C:/Advanced_GIS/GISandPython/ARGOSTracking/Scratch/ARGOStrack.shp"
+
+
+
+
+
+

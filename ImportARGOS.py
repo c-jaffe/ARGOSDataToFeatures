@@ -13,9 +13,17 @@
  # library
 import sys, os, arcpy
 
+# environments
+arcpy.env.overwriteOutput = True
+
 # import data
 inputFile = 'C:/Advanced_GIS/GISandPython/ARGOSTracking/Data/ARGOSData/1997dg.txt'
 outputFC = "C:/Advanced_GIS/GISandPython/ARGOSTracking/Scratch/ARGOStrack.shp"
+
+outputSR = arcpy.SpatialReference(54002)
+
+outPath,outName = os.path.split(outputFC)
+arcpy.CreateFeatureclass_management(outPath, outName, "POINT", "", "", "", outputSR)
 
 #%% Construct a while loop to iterate through all lines in the datafile
 # Open the ARGOS data file for reading
@@ -55,6 +63,6 @@ while lineString:
 #Close the file object
 inputFileObj.close()
 
-
+#%% 
 
 
